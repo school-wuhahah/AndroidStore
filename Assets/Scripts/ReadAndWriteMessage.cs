@@ -36,6 +36,7 @@ public static class ReadAndWriteMessage
     {
 #if UNITY_EDITOR
         return Application.dataPath + "/StreamingAssets/Message.txt";
+        //return Application.dataPath + "/Resources/Message.txt";
 
 #elif UNITY_STANDALONE_WIN
         return Application.dataPath + "/StreamingAssets/Message.txt";
