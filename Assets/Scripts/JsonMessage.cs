@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using Player.Hero;
 using System.IO;
+using RwManager;
+
 public class JsonMessage : MonoBehaviour
 {
 
@@ -16,9 +18,13 @@ public class JsonMessage : MonoBehaviour
 
         string stringJson = JsonUtility.ToJson(hero);
         //Debug.Log(stringJson);
-        ReadMessageInResources();
-        ReadMessageStreamingAssets();
-
+        //ReadMessageInResources();
+        //ReadMessageStreamingAssets();
+        //RwManagerInPcOrAnroid.WriteMessageInPcOrAndroid("test", "hahha.txt", stringJson);
+        //string result = RwManagerInPcOrAnroid.ReadMessageInPcOrAndroid("test", "hahha.txt");
+        //Debug.Log(result);
+        string result=RwManagerInPcOrAnroid.ReadMessageInResources("", "hahha");
+        Debug.Log(result);
     }
 
     // Update is called once per frame
@@ -50,23 +56,23 @@ public class JsonMessage : MonoBehaviour
         //string result = "";
         if (path.Contains("://"))
         {
-            Debug.Log("Android Path"+path);
+            Debug.Log("Android Path" + path);
             StartCoroutine(ReadMessage(path));
         }
         else
         {
             string result = File.ReadAllText(path);
-            Debug.Log("PC Path："+path);
-            Debug.Log("PC StreamingAssets"+result);
+            Debug.Log("PC Path：" + path);
+            Debug.Log("PC StreamingAssets" + result);
         }
 
     }
     IEnumerator ReadMessage(string path)
     {
-        
+
         WWW www = new WWW(path);
         yield return www;
-        Debug.Log("Android "+"StreamAssets:"+www.text);
+        Debug.Log("Android " + "StreamAssets:" + www.text);
         //result = www.text;
 
     }

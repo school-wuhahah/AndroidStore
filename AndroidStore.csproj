@@ -81,10 +81,13 @@
     <Compile Include="Assets\Scripts\Hero.cs" />
     <Compile Include="Assets\Scripts\JsonMessage.cs" />
     <Compile Include="Assets\Scripts\ReadAndWriteMessage.cs" />
+    <Compile Include="Assets\Scripts\RwManagerInPcOrAnroid.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Resources\Message.txt" />
+    <None Include="Assets\Resources\hahha.txt" />
     <None Include="Assets\StreamingAssets\Message.txt" />
+    <None Include="Assets\StreamingAssets\hahha.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
