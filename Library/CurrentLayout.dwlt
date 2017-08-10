@@ -278,8 +278,8 @@ MonoBehaviour:
     y: 0
     width: 703
     height: 449
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 20}
@@ -304,8 +304,8 @@ MonoBehaviour:
     y: 449
     width: 703
     height: 498
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -413,7 +413,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 7429ffff302affff402bffff18fcffff00000000
+    m_ExpandedIDs: 045effffd05effffdc5ffffff866ffffc267ffffd268ffff1e74ffffe874fffff875ffff2c9efffff89effff04a0ffffb2fbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -506,18 +506,19 @@ MonoBehaviour:
     m_ScenePaths: []
     m_ShowAllHits: 0
     m_SearchArea: 0
-    m_Folders: []
+    m_Folders:
+    - Assets/StreamingAssets
   m_ViewMode: 0
   m_StartGridSize: 64
   m_LastFolders: []
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: E:\Git_Projects\AndroidStore
+  m_LastProjectPath: E:\git_projects\AndroidStore
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 7a220000
     m_LastClickedID: 8826
-    m_ExpandedIDs: 0000000014260000182600002026000022260000
+    m_ExpandedIDs: 000000005826000066260000b2260000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -545,21 +546,21 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000001426000022260000dc280000
+    m_ExpandedIDs: 00000000582600005c2600006426000066260000b2260000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: RwManagerInPcOrAnroid
+      m_OriginalName: RwManagerInPcOrAnroid
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 9774
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 10}
     m_SearchString: 
@@ -643,8 +644,8 @@ MonoBehaviour:
     m_VAllowExceedBaseRangeMin: 1
     m_VAllowExceedBaseRangeMax: 1
     m_ScaleWithWindow: 0
-    m_HSlider: 0
-    m_VSlider: 0
+    m_HSlider: 1
+    m_VSlider: 1
     m_IgnoreScrollWheelUntilClicked: 0
     m_EnableMouseInput: 1
     m_EnableSliderZoom: 0
@@ -656,7 +657,7 @@ MonoBehaviour:
       y: 17
       width: 701
       height: 460
-    m_Scale: {x: 0.36510417, y: 0.36510417}
+    m_Scale: {x: 0.5989583, y: 0.5989583}
     m_Translation: {x: 350.5, y: 230}
     m_MarginLeft: 0
     m_MarginRight: 0
@@ -664,12 +665,12 @@ MonoBehaviour:
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -960
-      y: -629.9572
-      width: 1920
-      height: 1259.9144
+      x: -585.1826
+      y: -384
+      width: 1170.3652
+      height: 768
     m_MinimalGUI: 1
-  m_defaultScale: 0.36510417
+  m_defaultScale: 0.5989583
   m_TargetTexture: {fileID: 0}
   m_CurrentColorSpace: 0
   m_LastWindowPixelSize: {x: 701, y: 477}

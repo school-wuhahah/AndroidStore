@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using UnityEngine;
 using System.IO;
+using System.Threading;
+
 namespace RwManager
 {
     public static class RwManagerInPcOrAnroid
@@ -66,8 +68,46 @@ namespace RwManager
         /// <returns></returns>
         public static string ReadMessageInStreamingAssets(string path, string fileName)
         {
-            return null;
+            string fPath = Application.streamingAssetsPath;
+            //Debug.Log(fPath);
+            string fullPath = Path.Combine(Path.Combine(fPath, path), fileName);
+            Debug.Log(fullPath);
+            Debug.Log("Bool:"+File.Exists(fullPath));
+            //android端判断File.Exists(fullPath)一直位false？？？，但可以通过这个路径利用www来读取(路径是对的)
+            //有疑问
+            //if (File.Exists(fullPath))
+            //{
+            Debug.Log("Path:" + fullPath);
+                if (fullPath.Contains("://"))
+                {
+
+                    //new Thread(o =>
+                    //{
+                    //    //WWW www = new WWW(fullPath);
+
+                    //    //if (www.isDone)
+
+
+
+                    //});
+                    WWW www = new WWW(fullPath);
+                    while (true)
+                    {
+                        if (www.isDone)
+                            break;
+                    }
+                    return www.text;
+                }
+                else
+                {
+                    return File.ReadAllText(fullPath);
+                }
+            //}
+
+            //return null;
         }
+
+
         /// <summary>
         /// pc或android从Resources文件夹中读取数据
         /// </summary>

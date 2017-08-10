@@ -23,7 +23,10 @@ public class JsonMessage : MonoBehaviour
         //RwManagerInPcOrAnroid.WriteMessageInPcOrAndroid("test", "hahha.txt", stringJson);
         //string result = RwManagerInPcOrAnroid.ReadMessageInPcOrAndroid("test", "hahha.txt");
         //Debug.Log(result);
-        string result=RwManagerInPcOrAnroid.ReadMessageInResources("", "hahha");
+        //string result=RwManagerInPcOrAnroid.ReadMessageInResources("", "hahha");
+        //Debug.Log(result);
+    
+        string result = RwManagerInPcOrAnroid.ReadMessageInStreamingAssets("","Message.txt");
         Debug.Log(result);
     }
 
